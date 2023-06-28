@@ -1,10 +1,11 @@
 # SAGIDN
 This repository contains the source code and datasets models accompanying the our paper: Identification of sub-Golgi protein localization by use of multi-dimensional feature fusion.
 ## Source codes:
-SeqVec_embedding.py: representation of protein sequences as 1024-dimensional feature vectors.
-map.py: Calculate contact maps.
-SeqVec_test_ge.py: train the SAGIDN model on the independent test set of Sub-Golgi proteins.
-SeqVeccross_ge.py: train the SAGIDN model on the tenfold cross-validation.
+* SeqVec_embedding.py: representation of protein sequences as 1024-dimensional feature vectors.
+* map.py:calculate contact maps.
+* SeqVec_test_ge.py: train the SAGIDN model on the independent test set of Sub-Golgi proteins.
+* SeqVeccross_ge.py: train the SAGIDN model on the tenfold cross-validation.
+* model.py:the SAGIDN model.
 # Dependencies
 * python >= 3.6
 * pytorch
