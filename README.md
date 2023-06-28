@@ -6,5 +6,5 @@ This repository contains the source code and datasets models accompanying the ou
 * numpy
 * pandas
 * sklearn
-# Special Notes
+# Contact
 Due to the extraction of sequence features and structural features of Golgi, plant vesicles and peroxisomal proteins in files exceeding 12G, the files are too large to upload. If necessary, please email us at sjn17860639060@163.com.
