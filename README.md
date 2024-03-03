@@ -1,4 +1,4 @@
-# Sub-Golgi_fusion
+# GASIDN
 This repository contains the source code and datasets models accompanying the our paper: Identification of sub-Golgi protein localization by use of multi-dimensional feature fusion.
 ## Source codes:
 * SeqVec_embedding.py: representation of protein sequences as 1024-dimensional feature vectors.
