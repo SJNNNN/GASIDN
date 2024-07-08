@@ -73,7 +73,7 @@ SEED = 2333
 np.random.seed(SEED)
 torch.manual_seed(SEED)
 if torch.cuda.is_available():
-    torch.cuda.set_device(3)
+    torch.cuda.set_device(0)
     torch.cuda.manual_seed(SEED)
 # Model parameters
 NUMBER_EPOCHS = 100
