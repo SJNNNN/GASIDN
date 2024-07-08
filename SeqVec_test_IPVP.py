@@ -127,14 +127,14 @@ def evaluate(model, val_features, val_graphs, val_labels,val_paddingfeatures):
                 graphs = sequence_graphs
                 y_true = labels
             y_pred = model(features, graphs,padding_features)
-            p = y_pred.detach().numpy().tolist()
-            l = y_true.numpy().tolist()
+            p = y_pred.detach().cpu().numpy().tolist()
+            l = y_true.cpu().numpy().tolist()
             for j in range(len(p)):
                 pm.append(p[j])
                 lm.append(int(l[j]))
-            p1.append(y_pred.detach().numpy().tolist()[0])
-            test_pre.append(torch.max(y_pred, 1)[1])
-            test_true.append(y_true)
+            p1.append(y_pred.detach().cpu().numpy().tolist()[0])
+            test_pre.append(torch.max(y_pred.cpu(), 1)[1])
+            test_true.append(y_true.cpu())
             if (torch.max(y_pred, 1)[1] == y_true):
                 exact_match += 1
             loss = model.criterion(y_pred, y_true.long())
