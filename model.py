@@ -101,23 +101,12 @@ class Textcnn(torch.nn.Module):
         super(Textcnn,self).__init__()
         self.embedding_size = emb_dim
         self.conv1 = nn.Conv1d(in_channels=self.embedding_size,out_channels = 128, kernel_size = 3)
-        self.mx1 = nn.MaxPool1d(2, stride=1)
+        self.mx1 = nn.MaxPool1d(2, stride=2)
         self.conv2 = nn.Conv1d(in_channels=128,out_channels = 128, kernel_size = 3)
-        self.mx2 = nn.MaxPool1d(2, stride=1)
+        self.mx2 = nn.MaxPool1d(2, stride=2)
         self.conv3 = nn.Conv1d(in_channels=128,out_channels = 128, kernel_size = 3)
-        #液泡
-        # self.mx3 = nn.MaxPool1d(432, stride=1)
         #高尔基体
-        self.mx3 = nn.MaxPool1d(594, stride=1)
-        # 高尔基体_new
-        # self.mx3 = nn.MaxPool1d(602, stride=1)
-        #线粒体M983
-        # self.mx3 = nn.MaxPool1d(387, stride=1)
-        #过氧化酶体
-        # self.mx3 = nn.MaxPool1d(433, stride=1)
-        #线粒体M317
-        # self.mx3 = nn.MaxPool1d(383, stride=1)
-
+        self.mx3 = nn.MaxPool1d(147, stride=1)
 
     def forward(self,x):
         # x = x.squeeze(1)
@@ -129,29 +118,7 @@ class Textcnn(torch.nn.Module):
         features = self.mx3(features)
         features = features.squeeze(2)
         return features
-# class TextcnnIndepend(torch.nn.Module):
-#     def __init__(self,emb_dim):
-#         super(TextcnnIndepend,self).__init__()
-#         self.embedding_size = emb_dim
-#         self.conv1 = nn.Conv1d(in_channels=self.embedding_size,out_channels = 128, kernel_size = 3)
-#         self.mx1 = nn.MaxPool1d(2, stride=1)
-#         self.conv2 = nn.Conv1d(in_channels=128,out_channels = 128, kernel_size = 3)
-#         self.mx2 = nn.MaxPool1d(2, stride=1)
-#         self.conv3 = nn.Conv1d(in_channels=128,out_channels = 128, kernel_size = 3)
-#         self.mx3 = nn.MaxPool1d(432, stride=1)
-#         self.out = nn.Linear(128, 2)
-#
-#     def forward(self,x):
-#         # x = x.squeeze(1)
-#         x = x.permute(0, 2, 1)
-#         features = self.conv1(x)
-#         features = self.mx1(features)
-#         features = self.mx2(self.conv2(features))
-#         features = self.conv3(features)
-#         features = self.mx3(features)
-#         features = features.squeeze(2)
-#         features=self.out(features)
-#         return features
+
 class Model(nn.Module):
 
     def __init__(self):
