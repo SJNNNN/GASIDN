@@ -1,10 +1,10 @@
 # GASIDN
 This repository contains the source code and datasets models accompanying the our paper: GASIDN:Identification of sub-Golgi proteins with multi-scale feature fusion.
 ## Datasets
-  Each file's data format consists of a protein sequence followed by a space and then the label.
 * The sub-Golgi protein dataset is stored in the "ge" folder, with "train.txt" serving as the training set and "test.txt" as the test set.
 * The Plant vacuole protein dataset is stored in the "IPVP" folder, with "train.txt" serving as the training set and "test.txt" as the test set.
 * The peroxisomal protein dataset is stored in the "PP" folder, with "PP_data.txt" containing both the data and the labels.
+  Each file contains protein sequence data and labels, formatted such that each line consists of a protein sequence followed by a space and then a label.
 ## Source codes:
 * SeqVec_embedding.py: representation of protein sequences as 1024-dimensional feature vectors.
 * map.py:calculate contact maps.
