@@ -12,9 +12,9 @@ This repository contains the source code and datasets models accompanying the ou
 * SeqVeccross_ge.py: train the SAGIDN model on the tenfold cross-validation.
 * model.py:the SAGIDN model.
 ## Experiment settings
-The model was trained using a grid search strategy to identify the optimal parameter settings for enhancing performance and training results. Various combinations of GCN hidden layer sizes (128, 256, and 512), learning rates (0.01, 0.001, and 0.0001), batch sizes (6, 8, and 10), and the number of attention heads (8, 16, 32, and 64) were explored. Additionally, the Dropout technique was implemented with values of 0.2, 0.5, and 0.7.  
-The final selected parameters were a GCN hidden layer size of 256, a learning rate of 0.0001, 16 attention heads, and a dropout rate of 0.5. The model training was conducted using Python 3.6.3 and PyTorch 1.7.1+cu101 on a single NVIDIA GTX 1080Ti GPU.  
-See the file "Parameters" for other parameters.
+*  The model was trained using a grid search strategy to identify the optimal parameter settings for enhancing performance and training results. Various combinations of GCN hidden layer sizes (128, 256, and 512), learning rates (0.01, 0.001, and 0.0001), batch sizes (6, 8, and 10), and the number of attention heads (8, 16, 32, and 64) were explored. Additionally, the Dropout technique was implemented with values of 0.2, 0.5, and 0.7.
+*  The final selected parameters were a GCN hidden layer size of 256, a learning rate of 0.0001, 16 attention heads, and a dropout rate of 0.5. The model training was conducted using Python 3.6.3 and PyTorch 1.7.1+cu101 on a single NVIDIA GTX 1080Ti GPU.
+*  See the file "Parameters" for other parameters.
 # Dependencies
 * python >= 3.6
 * pytorch
