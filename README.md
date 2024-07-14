@@ -1,5 +1,5 @@
 # GASIDN
-This repository contains the source code and datasets models accompanying the our paper: Identification of sub-Golgi protein localization by use of multi-dimensional feature fusion.
+This repository contains the source code and datasets models accompanying the our paper: GASIDN:Identification of sub-Golgi proteins with multi-scale feature fusion.
 ## Source codes:
 * SeqVec_embedding.py: representation of protein sequences as 1024-dimensional feature vectors.
 * map.py:calculate contact maps.
