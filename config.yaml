@@ -9,13 +9,20 @@ model:
   final_max_pooling:
     kernel_size: 147
   GCN_layers:
-    HIDDEN_DIM :256 
-    OUTPUT_DIM : 64  
+    layers_num:2
+    hidden_dim :256 
+    output_dim : 64  
+  multi-head attention：
+    head_num:16
+  fusion method：
+    name:"weighted fusion"
+    weight:0.5
 
 training:
   batch_size: 8
   num_epochs: 60
   learning_rate: 0.0001
+  dropout_rate:0.5
   optimizer: "adam"
   loss_function: "cross_entropy"
   lr_scheduler:
@@ -27,6 +34,6 @@ runtime:
   seed: 42
   log_interval: 10
   save_model: true
-  output_dir: "checkpoints/"
+
 
 
