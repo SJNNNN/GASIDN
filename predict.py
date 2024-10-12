@@ -145,7 +145,7 @@ def evaluate(model, val_features, val_graphs, val_labels,val_paddingfeatures):
 
 def main():
     model = Model()
-    model.load_state_dict(torch.load('./model/ge_SeqVec_best_model.pkl'))
+    model.load_state_dict(torch.load('./model_storage/ge_SeqVec_best_model.pkl'))
     if torch.cuda.is_available():
         model.cuda()
     test_features, test_graphs,test_labels, test_paddingfeatures = load_data(Dataset_Path + "test_new.txt",
