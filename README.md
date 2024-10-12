@@ -12,7 +12,7 @@ This repository contains the source code and datasets models accompanying the ou
 * SeqVeccross_ge.py: Performs tenfold cross-validation training of the SAGIDN model.
 * model.py:Defines the architecture of the SAGIDN model.
 ## Model parameter settings
-* The detailed config.yaml file of the parameters for our GASIDN model .
+* The detailed parameters of our GASIDN model can be found in the config.yaml file. 
 # Dependencies
 * python >= 3.6
 * pytorch
