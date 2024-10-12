@@ -14,7 +14,7 @@ This repository contains the source code and datasets models accompanying the ou
 ## Model parameter settings
 * The detailed parameters of our GASIDN model can be found in the`config.yaml` file.
 ## Testable case 
-We saved the model in the form of a .pkl file and uploaded it to the directory named model_storage. Additionally, we have uploaded the test code in a file called ```predict.py```. To run the test, users only need to place the required protein embedding files and PDB files into the specified folder path, as outlined in the code. Once the files are placed correctly, the test can be executed smoothly.
+The model, saved as `ge_SeqVec_best_model.pkl`, can be found in the model_storage directory. We have also provided a test script in` predict.py `. To run the test, simply place the required protein embedding files and PDB files in the appropriate folder path specified in the code. Once the files are in place, the test will run seamlessly.
 ```Python
 python predict.py
 ```
