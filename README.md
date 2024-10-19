@@ -1,5 +1,5 @@
 # GASIDN
-This repository contains the source code and datasets models accompanying the our paper: GASIDN:Identification of sub-Golgi proteins with multi-scale feature fusion.
+This repository contains the source code and datasets accompanying our paper:` GASIDN: Identification of Sub-Golgi Proteins with Multi-Scale Feature Fusion`.
 ## Datasets
   Each file contains protein sequence data and corresponding labels, with each line formatted as a protein sequence followed by a space and then its label.
 * The Sub-Golgi protein dataset is located in the ge folder, where `train.txt` serves as the training set, and `test.txt` serves as the test set.
